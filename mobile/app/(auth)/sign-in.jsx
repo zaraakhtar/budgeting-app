@@ -93,7 +93,7 @@ export default function Page() {
         <Text style={styles.footerText}>Don&apos;t have an account?</Text>
         <Link href="/sign-up" asChild>
         <TouchableOpacity>
-          <Text style={styles.footerLink}>Sign up</Text>
+          <Text style={styles.linkText}>Sign up</Text>
         </TouchableOpacity>
         </Link>
       </View>
