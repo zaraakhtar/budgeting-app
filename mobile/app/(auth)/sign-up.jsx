@@ -37,9 +37,11 @@ export default function SignUpScreen() {
       // Change UI to show verification code input
       setPendingVerification(true);
     } catch (err) {
-      // See https://clerk.com/docs/custom-flows/error-handling
-      // for more info on error handling
-      console.error(JSON.stringify(err, null, 2));
+      if (err.errors?.[0]?.code === "form_identifier_exists") {
+        setError("This email is already registered. Please sign in instead.");
+      } else {
+        setError("An error occurred. Please try again.");
+      }
     }
   };
 

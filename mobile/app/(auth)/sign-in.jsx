@@ -25,14 +25,20 @@ export default function Page() {
       })
 
       if (signInAttempt.status === 'complete') {
-        await setActive({ session: signInAttempt.createdSessionId })
+        await setActive({ session: signInAttempt.createdSessionId });
+        
         // router.replace('/') // REMOVE THIS LINE
       } else {
         console.error(JSON.stringify(signInAttempt, null, 2))
       }
     } catch (err) {
-      console.error(JSON.stringify(err, null, 2))
+      if (err.errors?.[0]?.code === 'form_password_incorrect') {
+      setError("Password is incorrect. Please try again.")
+    } else {
+      setError("An unexpected error occurred. Please try again.")
     }
+  }
+
   }
 
   return (
