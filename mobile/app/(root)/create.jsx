@@ -1,9 +1,9 @@
-import { View, Text, ActivityIndicator, TouchableOpacity, TextInput } from 'react-native'
+import { View, Text, ActivityIndicator, TouchableOpacity, TextInput , Alert } from 'react-native'
 import { useRouter } from 'expo-router'
 import { useUser } from '@clerk/clerk-expo'
-import { useState } from 'react'
-import { Alert } from 'react-native'
-import React from 'react'   
+import React, { useState } from 'react'
+
+   
 import { API_URL } from '../../constants/api'
 import {styles} from '../../assets/styles/create.styles'
 import { Ionicons } from '@expo/vector-icons';
