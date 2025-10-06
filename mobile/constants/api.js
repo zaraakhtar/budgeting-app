@@ -1,0 +1,1 @@
+export const API_URL = "https://budgeting-app-production-789f.up.railway.app/api";
