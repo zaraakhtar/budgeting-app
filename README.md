@@ -30,10 +30,10 @@ It provides real-time financial insights with a clean, intuitive interface and s
 ## 🖼️ App Screenshots
 
 <p align="center">
-  <img src="./screenshots/screen1.png" width="250" alt="Home Screen" />
-  <img src="./screenshots/screen2.png" width="250" alt="Add Transaction" />
-  <img src="./screenshots/screen3.png" width="250" alt="Expense Summary" />
-  <img src="./screenshots/screen4.png" width="250" alt="Profile / Login" />
+  <img src="./screenshots/screen1.png" width="270" alt="Home Screen" />
+  <img src="./screenshots/screen2.png" width="270" alt="Add Transaction" />
+  <img src="./screenshots/screen3.png" width="270" alt="Expense Summary" />
+  <img src="./screenshots/screen4.png" width="270" alt="Profile / Login" />
 </p>
 
 ---
